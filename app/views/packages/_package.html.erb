@@ -1,0 +1,15 @@
+<p>
+  <strong>Tracking number:</strong>
+    <%= package.tracking_number %>
+</p>
+
+<p>
+  <strong>Delivery status:</strong>
+  <%= package.delivery_status %>
+</p>
+
+<p>
+  <%= link_to 'Destroy Package', [package.courier, package],
+                method: :delete,
+                data: { confirm: "Are you sure?" } %>
+</p>
